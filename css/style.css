@@ -1223,9 +1223,8 @@ input:not(:placeholder-shown):not(:focus):valid{
 .footer__link {
   position: relative;
   z-index: 1;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  width: 100%;
   margin: 0;
   padding: 0;
   margin-right: auto;
@@ -1521,7 +1520,7 @@ input::placeholder{
 
 .ansvers__section::after{
   position: absolute;
-  top: 645px;
+  bottom: 50px;
   left: calc(50% + 196px);
   display: block;
   width: 654px;
@@ -1658,4 +1657,209 @@ input::placeholder{
 
 .ansvers__block .ansvers-bottom__text{
   display: none;
+}
+
+
+
+
+
+/* SERVISES */
+
+
+
+.servises-parrot {
+  padding-top: 118px;
+  padding-bottom: 140px;
+  background-image: url(../img/servises-parrot.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 490px);
+}
+
+.servises-box{
+  margin-left: 112px;
+}
+
+.servises__heading {
+  margin: 0;
+  flex-shrink: 0;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 64px;
+  color: var(--btn-black);
+  margin-bottom: 21px;
+}
+
+.servises__text {
+  width: 447px;
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.serviceses{
+  padding-bottom: 169px;
+}
+
+.servicesss-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  list-style: none;
+}
+
+.servicesss-grid__item {
+  width: 305px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.servicess {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 45px;
+  border-radius: 5px 5px 0 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right top ;
+  background-size: 108px 94px;
+  transition: box-shadow 0.4s ease;
+}
+
+.servicess:nth-child(odd) {
+  background-image: url("../img/servises-pet1.png");
+}
+
+.servicess:nth-child(even) {
+  background-image: url("../img/servises-pat2.png");
+}
+
+.servicess:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicess::before {
+  display: block;
+  width: 90px;
+  height: 78px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.servicess__title {
+  width: 230px;
+  flex-shrink: 0;
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 34px;
+  color: var(--btn-black);
+}
+
+.servicess__info {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.servicess__link {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.4s ease;
+}
+
+.servicesss-grid__item:nth-child(odd) .servicess__link {
+  background-color: gold;
+}
+
+.servicesss-grid__item:nth-child(even) .servicess__link {
+  background-color: dodgerblue;
+}
+
+.servicess .servicess__link:hover {
+  background-color: #222;
+}
+
+
+
+/* ABOUT */
+
+
+
+
+.about__section {
+  padding-top: 117px;
+  padding-bottom: 310px;
+  background-image: url(../img/about__header.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 30px) bottom;
+}
+
+.about__heading {
+  margin: 0;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 64px;
+  color: var(--btn-black);
+  margin-bottom: 22px;
+}
+
+.about__text {
+  width: 411px;
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+.house__about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__house--img {
+  display: block;
+}
+
+.house__img {
+  display: block;
+}
+
+.about__house--text {
+  background-color: #fff;
+  background-image: url(../img/about-bg-fish.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 127px 66px 140px 112px;
+  
+}
+
+.house__text {
+  width: 557px;
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.yellow__text {
+  color: var(--btn-color);
 }

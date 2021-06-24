@@ -1,21 +1,48 @@
-var modal = document.getElementById("modals");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("modal-btn__close")[0];
+// var modal = document.getElementById("modals");
+// var btn = document.getElementById("myBtn");
+// var span = document.getElementsByClassName("modal-btn__close")[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
+
+
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+var elsMyBtn = document.querySelectorAll(".mybtn");
+var elModal = document.querySelector(".modal");
+var elClose = elModal.querySelector(".modal-btn__close");
+
+var openModal = function () {
+  elModal.classList.add('modal__open');
+};
+
+var closeModal = function () {
+  elModal.classList.remove('modal__open');
+};
+
+if (elsMyBtn.length > 0){
+  elsMyBtn.forEach(function (link) {
+    link.addEventListener('click', function (evt){
+      evt.preventDefault();
+      openModal();
+    })
+  })
 }
 
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+if (elClose){
+  elClose.addEventListener('click', function (){
+    closeModal();
+  })
 }
 
 // var elsModal = document.querySelectorAll('#modals');
@@ -39,3 +66,5 @@ elsAnsverBtn.forEach(function (toggle) {
     toggle.closest('.ansvers__item').classList.toggle('ansvers--open')
   })
 })
+
+
